@@ -1,7 +1,3 @@
-Yes. Now that I understand that `Python_Lab` is not just a folder for random Python exercises, but part of your broader **software-engineering learning journey**, the README should reflect that.
-
-I would keep it professional, but still personal enough that it feels like a real developer's learning repository rather than a generated curriculum document.
-
 # Python Lab
 
 Python Lab is my personal Python learning repository, created as part of my journey toward becoming a software engineer.
