@@ -1,22 +1,12 @@
 [
   {
+    "id": 1,
+    "title": "Go to school",
+    "completed": true
+  },
+  {
     "id": 2,
-    "title": "my apps works perfectly",
+    "title": "Do your home work",
     "completed": false
-  },
-  {
-    "id": 3,
-    "title": "project completed",
-    "completed": true
-  },
-  {
-    "id": 4,
-    "title": "done",
-    "completed": false
-  },
-  {
-    "id": 5,
-    "title": "go to school",
-    "completed": true
   }
 ]

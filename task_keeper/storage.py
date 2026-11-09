@@ -22,7 +22,6 @@ def load_task(path):
 #id generator
 def generate_id(tasks):
     highest_id = 0
-
     for task in tasks:
         if task['id'] > highest_id:
             highest_id = task['id']
@@ -68,7 +67,6 @@ def save_task(path):
     }
     tasks.append(new_task)
 
-    path.parent.mkdir(parents=True, exist_ok=True)
     write_tasks(path, tasks)
     print('TASK SAVED SUCCESSFULLY!!')
 
