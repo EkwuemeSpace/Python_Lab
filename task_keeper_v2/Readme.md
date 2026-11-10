@@ -42,7 +42,7 @@ task_keeper/
 
 The project structure may vary slightly depending on the local setup.
 
-## Getting Started
+## Getting StartedPython_Lab
 
 ### 1. Clone the Repository
 

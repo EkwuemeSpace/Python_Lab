@@ -39,19 +39,19 @@ For each important concept, I aim to move through several stages:
 
 ```text
 Learn
-  ↓
+   ↓
 Understand
-  ↓
+   ↓
 Predict
-  ↓
+   ↓
 Implement
-  ↓
+   ↓
 Debug
-  ↓
+   ↓
 Test
-  ↓
+   ↓
 Apply
-  ↓
+   ↓
 Transfer
 ```
 
@@ -93,6 +93,49 @@ NumMystery/
 └── README.md
 ```
 
+### Task Keeper CLI V2
+
+**Task Keeper CLI V2** is a command-line task management application built with Python.
+
+It allows users to create tasks, view saved tasks, mark tasks as completed, and delete tasks through an interactive terminal interface.
+
+This is the second version of my CLI task manager. It builds on my previous attempt with improvements to code organisation, data persistence, input validation, and the overall terminal experience.
+
+The application stores task records in a JSON file, allowing tasks to remain available between program sessions. It also features an animated welcome screen and a colourful task display to improve the user experience.
+
+Concepts practiced include:
+
+* Functions and modular programming
+* Lists and dictionaries
+* File handling
+* JSON serialization and deserialization
+* Reading and writing persistent data
+* Exception handling
+* Input validation
+* Loops and conditional statements
+* Modules and packages
+* Python imports
+* The `pathlib` module
+* The `sys` and `time` modules
+* Terminal colours and text animation
+* Application entry points using `if __name__ == "__main__":`
+
+Project:
+
+```text
+Task_Keeper/
+├── data/
+│   └── tasks.json
+│
+├── package/
+│   ├── __init__.py
+│   ├── storage.py
+│   └── utils.py
+│
+├── main.py
+└── README.md
+```
+
 ## Repository Structure
 
 The repository will continue to evolve as I progress through my learning path.
@@ -102,6 +145,18 @@ Python_Lab/
 │
 ├── NumMystery/
 │   ├── NumMystery.py
+│   └── README.md
+│
+├── Task_Keeper/
+│   ├── data/
+│   │   └── tasks.json
+│   │
+│   ├── package/
+│   │   ├── __init__.py
+│   │   ├── storage.py
+│   │   └── utils.py
+│   │
+│   ├── main.py
 │   └── README.md
 │
 └── README.md
@@ -125,19 +180,19 @@ My debugging process is gradually becoming:
 
 ```text
 Observe
-  ↓
+   ↓
 Reproduce
-  ↓
+   ↓
 Read the error
-  ↓
+   ↓
 Identify the failure
-  ↓
+   ↓
 Form a hypothesis
-  ↓
+   ↓
 Test the hypothesis
-  ↓
+   ↓
 Fix
-  ↓
+   ↓
 Verify
 ```
 
@@ -213,7 +268,7 @@ cd Python_Lab
 
 Navigate to the project you want to run.
 
-For example:
+For example, to run NumMystery:
 
 ```bash
 cd NumMystery
@@ -224,6 +279,13 @@ On systems where Python is accessed using `python3`:
 
 ```bash
 python3 NumMystery.py
+```
+
+To run Task Keeper CLI V2, navigate into its project directory:
+
+```bash
+cd Task_Keeper
+python3 main.py
 ```
 
 Individual projects may have additional setup instructions in their own README files.
@@ -244,23 +306,23 @@ The long-term goal is to become capable of taking an unfamiliar software problem
 
 ```text
 Understand the problem
-        ↓
+       ↓
 Clarify the requirements
-        ↓
+       ↓
 Break the problem down
-        ↓
+       ↓
 Choose an approach
-        ↓
+       ↓
 Write the code
-        ↓
+       ↓
 Test it
-        ↓
+       ↓
 Debug it
-        ↓
+       ↓
 Review it
-        ↓
+       ↓
 Improve it
-        ↓
+       ↓
 Explain the solution
 ```
 
