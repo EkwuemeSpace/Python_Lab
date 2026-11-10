@@ -34,7 +34,7 @@ task_keeper/
 │   ├── __init__.py
 │   ├── storage.py
 │   ├── utils.py
-│   └── helpers.py
+│
 │
 ├── main.py
 └── README.md
