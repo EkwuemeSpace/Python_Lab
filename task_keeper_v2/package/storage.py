@@ -31,7 +31,7 @@ def save_task(file_path, task):
 
 
 def add_task(file_path):
-    task_title = input('please enter task title: ')
+    task_title = input('please enter task title: ').strip()
 
     if not task_title:
         print('error: task name cannot be empty!', file=sys.stderr)
