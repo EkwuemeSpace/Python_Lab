@@ -63,13 +63,17 @@ def update_task(file_path):
             return
     except ValueError:
         print('task_id must be an integer', file=sys.stderr)
+        return
 
 
     for task in loaded_content:
         if task['id'] == task_id:
+            view_tasks(file_path)
             task['done'] = True
             print('Task updated successfully')
-    save_task(file_path, loaded_content) 
+            save_task(file_path, loaded_content)
+            return
+    print(f'Task id: {task_id} not found!', file=sys.stderr)
 
 
 def delete_task(file_path):
@@ -80,6 +84,7 @@ def delete_task(file_path):
             return
     except ValueError:
         print('task id must be an integer', file=sys.stderr)
+        return
 
     loaded_content = task_loader(file_path)
 
