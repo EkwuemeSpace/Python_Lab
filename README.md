@@ -136,6 +136,62 @@ Task_Keeper/
 └── README.md
 ```
 
+### Expense Tracker CLI
+
+**Expense Tracker CLI** is a command-line application for recording and analysing personal spending.
+
+It allows users to add, view, delete, search, and filter expenses, and to generate financial reports. Expenses are saved to a JSON file so they remain available between sessions.
+
+This project is my first application with a full automated test suite and a dedicated interface layer. All colours, animations, tables, and prompts live in a single `ui.py` module, so the rest of the code never deals with styling directly.
+
+Features:
+
+* Add expenses with validated description, amount, and category
+* View expenses in a styled table with totals
+* Delete expenses with a confirmation step
+* Search by description, filter by category, and filter by date range
+* Reports: total expenditure, category expenditure, monthly summary, and highest expense
+* Animated spinner, progress bar, and typewriter banner
+
+Concepts practiced include:
+
+* Splitting a large program into modules and packages
+* Separation of concerns (storage, interface, features, reports)
+* JSON persistence and the `pathlib` module
+* The `datetime` module and sortable `YYYY-MM-DD` dates
+* Input validation with early returns
+* Exception handling
+* Dictionaries for grouping data (monthly totals)
+* Automated testing with `pytest`
+* Test fixtures, `monkeypatch`, `capsys`, and `parametrize`
+* Terminal interfaces with the `rich` library
+* Debugging by reading tracebacks and failing tests
+
+Project:
+
+```text
+Expence_tracker/
+├── data/
+│   └── expenses.json
+│
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── storage.py
+│   ├── utils.py
+│   ├── ui.py
+│   ├── expenses.py
+│   ├── search.py
+│   └── reports.py
+│
+├── tests/
+│   └── test_all.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
 ## Repository Structure
 
 The repository will continue to evolve as I progress through my learning path.
@@ -157,6 +213,27 @@ Python_Lab/
 │   │   └── utils.py
 │   │
 │   ├── main.py
+│   └── README.md
+│
+├── Expence_tracker/
+│   ├── data/
+│   │   └── expenses.json
+│   │
+│   ├── src/
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── storage.py
+│   │   ├── utils.py
+│   │   ├── ui.py
+│   │   ├── expenses.py
+│   │   ├── search.py
+│   │   └── reports.py
+│   │
+│   ├── tests/
+│   │   └── test_all.py
+│   │
+│   ├── main.py
+│   ├── requirements.txt
 │   └── README.md
 │
 └── README.md
@@ -238,9 +315,15 @@ The long-term goal is to become capable of solving unfamiliar problems independe
 
 My primary focus in this repository is Python.
 
-As my broader software engineering journey develops, I will also work with technologies such as:
+Tools used so far:
 
 * Python
+* `rich` (terminal interfaces)
+* `pytest` (automated testing)
+* Git and GitHub
+
+As my broader software engineering journey develops, I will also work with technologies such as:
+
 * JavaScript
 * HTML
 * CSS
@@ -248,7 +331,6 @@ As my broader software engineering journey develops, I will also work with techn
 * Go
 * REST APIs
 * Databases
-* Git and GitHub
 
 Technologies will be introduced progressively as they become relevant to the learning path.
 
@@ -286,6 +368,20 @@ To run Task Keeper CLI V2, navigate into its project directory:
 ```bash
 cd Task_Keeper
 python3 main.py
+```
+
+To run Expense Tracker CLI, navigate into its project directory, install its dependencies, and start the program:
+
+```bash
+cd Expence_tracker
+pip install -r requirements.txt
+python3 main.py
+```
+
+To run its test suite:
+
+```bash
+python3 -m pytest -v
 ```
 
 Individual projects may have additional setup instructions in their own README files.
