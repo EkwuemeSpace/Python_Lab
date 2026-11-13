@@ -1,0 +1,16 @@
+[
+    {
+        "id": 2,
+        "description": "Go to school",
+        "category": "Transportation",
+        "amount": 1200,
+        "date": "2026-11-13"
+    },
+    {
+        "id": 3,
+        "description": "Buy rice",
+        "category": "Food",
+        "amount": 1050,
+        "date": "2026-11-13"
+    }
+]
