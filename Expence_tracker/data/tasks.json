@@ -12,5 +12,12 @@
         "category": "Food",
         "amount": 1050,
         "date": "2026-11-13"
+    },
+    {
+        "id": 4,
+        "description": "subscribe TV",
+        "category": "Utilities",
+        "amount": 9000,
+        "date": "2026-11-13"
     }
 ]

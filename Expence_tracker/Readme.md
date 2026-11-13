@@ -51,7 +51,7 @@ Expence_tracker/
 ## Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/EkwuemeSpace/Python_Lab.git
 cd Expence_tracker
 
 python3 -m venv .venv
